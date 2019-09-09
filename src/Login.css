@@ -1,29 +1,27 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
   background-color: #191919;
-  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: 64px;
-  color:#00A3FF;
 }
 
 .title{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
   width: 750px;
   border: 1px solid;
+  font-size: 64px;
+  color:#00A3FF;
   box-shadow: inset 0px 0px 10px #00A3FF;
-  margin: auto;
 } 
 
+.Login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Enter{
-  position: absolute;
-  left: 44.8%;
-  top: 528px;
   width: 190px;
   height: 23.32px;  
   border-radius: 7px;
@@ -34,33 +32,32 @@
   animation: myOrbit 10s linear infinite;
 }
 
-.Username {
-  position: absolute; 
-  left: 44.83%;
-  top: 491px;
-  width: 188px;
-  height: 22px;
-
-  background: #2B2B2B;
-  color: #00A3FF;
-  box-shadow: inset 0px 0px 4px #FFFFFF;
-
+.Enter:hover{
+  background: #0066FF;
 }
-.Password{
-  position: absolute;
-  left: 44.83%;
-  top: 565px;
+
+.Username {
   width: 188px;
   height: 22px;
 
   background: #2B2B2B;
   color: #00A3FF;
   box-shadow: inset 0px 0px 4px #FFFFFF;
+}
+
+.Password{
+  width: 188px;
+  height: 22px;
+
+  background: #2B2B2B;
+  color: #00A3FF;
+  box-shadow: inset 0px 0px 4px #FFFFFF; 
 }
 
 .Main{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-height: 100%;
   background-color: #191919;
@@ -71,13 +68,12 @@ body{
 }
 
 .Page{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 100VW;
+  height: 100VH;
 }
 
 @keyframes myOrbit {
-	from { 	transform: rotate(0deg) translateX(125px) rotate(90deg); }
-	to   {  transform: rotate(360deg) translateX(125px) rotateZ(90deg); }
+	from { 	transform: rotate(360deg) translateX(125px) rotate(90deg); }
+  to   {  transform: rotate(0deg) translateX(125px) rotateZ(90deg); }
 }
+
