@@ -17,12 +17,12 @@ function HomePage() {
           Danmachi
         </Link>
       </div>
-      <a href="./series/DemonSlayer">
+      <Link to="./series/DemonSlayer">
         <div className="ShowCard">
           <img src={DemonSlayerCover} ALT="DemonSlayer" width="114" height="148" />
           DemonSlayer
           </div>
-      </a>
+      </Link>
       <a href="./series/DrStone">
         <div className="ShowCard">
           <img src={DrStoneCover} ALT="Dr.Stone" width="114" height="148" />
