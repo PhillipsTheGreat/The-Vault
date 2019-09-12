@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const loginHeader = () => {
     return (
-        <div className="App-header">
-            <div className="SiteTitle">
+        <div className="Login-header">
+            <div className="LoginTitle">
                 The Vault
             </div>
         </div>
@@ -24,10 +24,11 @@ const siteHeader = () => {
             <div className="SiteTitle">
                 The Vault
             </div>
-            <textarea className="SearchBar" rows="1" />
-            <button className="Search">Search</button>
+            <div className="SearchContainer">
+                <textarea className="SearchBar" rows="1" />
+                <button className="SearchButton">Search</button>
+            </div>
         </div>
-
     )
 }
 
@@ -37,7 +38,7 @@ function App() {
             <title>
                 The Vault
             </title>
-            <body>
+            <body className="Body">
                 <div id="root">
                     <div className="App">
                         <Router>

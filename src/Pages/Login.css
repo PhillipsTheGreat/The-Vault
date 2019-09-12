@@ -1,3 +1,19 @@
+.Login-header {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginTitle{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  border: 1px solid;
+  font-size: 64px;
+  color:#00A3FF;
+  box-shadow: inset 0px 0px 12px #00A3FF;
+} 
 
 .LoginContainer{
   display: flex;
@@ -14,11 +30,11 @@
 
   background: #00A3FF;
   mix-blend-mode: normal;
-  box-shadow: inset 0px 0px 10px #00A3FF;
+  box-shadow: inset 0px 0px 6px #FFFFFF;
   /* animation: myOrbit 10s linear infinite; */
 }
 
-.Enter:hover{
+.LoginButton:hover{
   background: #0066FF;
 }
 

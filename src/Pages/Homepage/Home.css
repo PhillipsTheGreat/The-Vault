@@ -3,12 +3,61 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 5px 0px 5px;
+    flex-shrink: 1;
+    margin: 100px 10px 10px 10px;
+    
+  }
+
+  .Showtitle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: #00A3FF;
   }
 
   .HomePageContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     flex-grow: 1;
+  }
+
+  .RecentItems{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #00A3FF;
+  }
+
+  .UpdateDates{
+    color: #9e9e9e;
+  }
+  .RecentBar {
+    display: flex;
+    justify-content: center;
+    height: 22px;
+    width: 257px;
+    border-radius: 7px;
+    background-color: #00A3FF;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 0px 10px #ffffff;
+  }
+  .UpdatedItemsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5px 0px 5px;
+    
+    width: 236px;
+    height: 453px;
+    border: 1px solid;
+    border-color: #00A3FF;
+    box-shadow: inset 0px 0px 5px #00A3FF;
+  }
+
+  .RecentlyUpdatedContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }

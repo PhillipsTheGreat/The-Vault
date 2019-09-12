@@ -10,11 +10,10 @@
   background-color: #191919;
 }
 
-
 .App-header {
   background-color: #191919;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .SiteTitle{
@@ -25,35 +24,51 @@
   border: 1px solid;
   font-size: 64px;
   color:#00A3FF;
-  box-shadow: inset 0px 0px 10px #00A3FF;
+  box-shadow: inset 0px 0px 12px #00A3FF;
 } 
-
 
 .LogOut{
   width: 121px;
   height: 22px;  
   border-radius: 7px;
+  margin: 20px 0px 0px 20px;
 
   background: #00A3FF;
   mix-blend-mode: normal;
-  box-shadow: inset 0px 0px 10px #00A3FF;
+  box-shadow: inset 0px 0px 6px #FFFFFF;
 }
 
-.Search{
+.SearchButton{
   width: 121px;
   height: 22px;  
   border-radius: 7px;
+  margin: 0px 25px;
 
   background: #00A3FF;
   mix-blend-mode: normal;
-  box-shadow: inset 0px 0px 10px #00A3FF;
+  box-shadow: inset 0px 0px 6px #FFFFFF;
+}
+
+.SearchButton:hover{
+  background: #0066FF;
+}
+
+.LogOut:hover{
+  background: #0066FF;
 }
 
 .SearchBar{
   width: 188px;
   height: 22px;
+  margin: 25px 25px 10px 0px;
 
   background: #2B2B2B;
   color: #00A3FF;
   box-shadow: inset 0px 0px 4px #FFFFFF;
+}
+
+.SearchContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
