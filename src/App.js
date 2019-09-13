@@ -45,9 +45,12 @@ function App() {
                             <Route path="/home" render={() => siteHeader()} />
                             <Route path="/series" render={() => siteHeader()} />
                             <Route path="/login" render={() => loginHeader()} />
+                            <Route exact path="/" render={() => loginHeader()} />
                             <div className="PageContentContainer">
                                 <Route path="/home" render={() => HomePage()} />
+                                <Route path="/eries" render={() => SeriesTemplate()} />
                                 <Route path="/login" render={() => Login()} />
+                                <Route exact path="/" render={() => Login()} />
                             </div>
                         </Router>
                     </div>

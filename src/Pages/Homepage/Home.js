@@ -1,47 +1,102 @@
 import React from 'react';
 import './Home.css';
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import DanmachiCover from "../../Images/DanmachiCover.jpg";
 import ArifuretaCover from "../../Images/ArifuretaCover.jpg";
 import DemonSlayerCover from "../../Images/DemonSlayerCover.jpg";
 import DrStoneCover from "../../Images/Dr.StoneCover.jpg";
-
+import GoldenWindCover from "../../Images/GoldenWindCover.jpg";
+import HaruhiCover from "../../Images/HaruhiCover.jpg";
+import SacredBeastsCover from "../../Images/SacredBeastsCover.jpg";
+import VinlandCover from "../../Images/VinlandCover.jpg";
+import CopCraftCover from "../../Images/CopCraftCover.jpg";
+import IronBloodedOrphansCover from "../../Images/IronBloodedOrphansCover.jpg";
 
 function HomePage() {
   return (
     <div className="HomePageContainer">
-      <div className="ShowCard">
-        <Link to="./series/Danmachi">
-          <img src={DanmachiCover} ALT="Danmachi" width="114" height="148" />
-          <div className="ShowTitle" >
-            Danmachi
+      <div className="ShowCardContainer">
+        <div className="ShowCard">
+          <Link to="./series/Danmachi">
+            <img src={DanmachiCover} ALT="Danmachi" width="114" height="148" />
+            <div className="ShowTitle" >
+              Danmachi
+            </div>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/DemonSlayer">
+            <img src={DemonSlayerCover} ALT="DemonSlayer" width="114" height="148" />
+            <div className="ShowTitle" >
+              DemonSlayer
           </div>
-        </Link>
-      </div>
-      <div className="ShowCard">
-        <Link to="./series/DemonSlayer">
-          <img src={DemonSlayerCover} ALT="DemonSlayer" width="114" height="148" />
-          <div className="ShowTitle" >
-            DemonSlayer
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/DrStone">
+            <img src={DrStoneCover} ALT="Dr.Stone" width="114" height="148" />
+            <div className="ShowTitle" >
+              Dr.Stone
           </div>
-        </Link>
-      </div>
-      <div className="ShowCard">
-        <Link to="./series/DrStone">
-          <img src={DrStoneCover} ALT="Dr.Stone" width="114" height="148" />
-          <div className="ShowTitle" >
-            Dr.Stone
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/GoldenWind">
+            <img src={GoldenWindCover} ALT="Golden Wind" width="114" height="148" />
+            <div className="ShowTitle" >
+              GoldenWind
+            </div>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/Haruhi">
+            <img src={HaruhiCover} ALT="Haruhi Sizumia" width="114" height="148" />
+            <div className="ShowTitle" >
+              Haruhi Sizumia
           </div>
-        </Link>
-      </div>
-      <div className="ShowCard">
-        <Link to="./series/Arifureta">
-          <img src={ArifuretaCover} ALT="Arifureta" width="114" height="148" />
-          <div className="ShowTitle" >
-            Arifureta
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/SacredBeasts">
+            <img src={SacredBeastsCover} ALT="To The Abondoned Sacred Beasts" width="114" height="148" />
+            <div className="ShowTitle" >
+              To The Abondoned Sacred Beasts
           </div>
-        </Link>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/VinlandSaga">
+            <img src={VinlandCover} ALT="Vinland Saga" width="114" height="148" />
+            <div className="ShowTitle" >
+              Vinland Saga
+          </div>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/Arifureta">
+            <img src={ArifuretaCover} ALT="Arifureta" width="114" height="148" />
+            <div className="ShowTitle" >
+              Arifureta
+          </div>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/IronBloodedOrphans">
+            <img src={IronBloodedOrphansCover} ALT="Iron Blooded Orphans" width="114" height="148" />
+            <div className="ShowTitle" >
+              Iron Blooded Orphans
+          </div>
+          </Link>
+        </div>
+        <div className="ShowCard">
+          <Link to="./series/CopCraft">
+            <img src={CopCraftCover} ALT="CopCraft" width="114" height="148" />
+            <div className="ShowTitle" >
+              CopCraft
+          </div>
+          </Link>
+        </div>
       </div>
       <div className="RecentlyUpdatedContainer">
         <div className="RecentBar">
