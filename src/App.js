@@ -1,6 +1,7 @@
 import React from "react";
 import HomePage from './Pages/Homepage/Home.js';
 import Login from './Pages/Login.js';
+import SeriesTemplate from './Pages/SeriesTemplate.js';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -18,9 +19,11 @@ const loginHeader = () => {
 const siteHeader = () => {
     return (
         <div className="App-header">
-            <Link to="/login">
-                <button className="LogOut">Log Out</button>
-            </Link>
+            <div>
+                <Link to="/login">
+                    <button className="LogOut">Log Out</button>
+                </Link>
+            </div>
             <div className="SiteTitle">
                 The Vault
             </div>
@@ -48,7 +51,7 @@ function App() {
                             <Route exact path="/" render={() => loginHeader()} />
                             <div className="PageContentContainer">
                                 <Route path="/home" render={() => HomePage()} />
-                                <Route path="/eries" render={() => SeriesTemplate()} />
+                                <Route path="/series" render={() => SeriesTemplate()} />
                                 <Route path="/login" render={() => Login()} />
                                 <Route exact path="/" render={() => Login()} />
                             </div>
