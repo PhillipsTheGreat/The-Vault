@@ -24,9 +24,11 @@ const siteHeader = () => {
                     <button className="LogOut">Log Out</button>
                 </Link>
             </div>
-            <div className="SiteTitle">
-                The Vault
-            </div>
+            <Link to="/home">
+                <div className="SiteTitle">
+                    The Vault
+                </div>
+            </Link>
             <div className="SearchContainer">
                 <textarea className="SearchBar" rows="1" />
                 <button className="SearchButton">Search</button>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function SeriesTemplate() {
     return (
         <div className="EpisodeTemplateContainer">
-            <div className="title">
+            <div className="Title">
                 Placeholder Title
             </div>
             <div className="SummaryContainer">
@@ -17,7 +17,15 @@ export default function SeriesTemplate() {
                     Swiggity swoogity comin' for that sample text!
                 </div>
             </div>
-            
+            <div classname="SubsContainer">
+                <div className="SubsLabel">
+                    Subs
+                </div>
+                <div className="SubsList">
+                    
+                </div>
+            </div>
+
         </div>
     );
 }
