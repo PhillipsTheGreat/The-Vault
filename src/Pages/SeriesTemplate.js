@@ -17,12 +17,12 @@ export default function SeriesTemplate() {
                     Swiggity swoogity comin' for that sample text!
                 </div>
             </div>
-            <div classname="SubsContainer">
+            <div className="SubsContainer">
                 <div className="SubsLabel">
                     Subs
                 </div>
                 <div className="SubsList">
-                    
+
                 </div>
             </div>
 
