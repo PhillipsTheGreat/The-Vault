@@ -72,3 +72,24 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
+.ScrollContainer{
+  perspective: 1px;
+  overflow: scroll;
+}
+
+.Spacer{
+  display: block;
+  height: 500px;
+}
+
+.ScrollBar{
+  background-color: #878787;
+  transform: matrix3d(
+   1, 0, 0, 0,
+   0, 1, 0, 0,
+   0, 0, 1, 0,
+   0, 0, 0, -1
+  ) 
+  translateZ(-2px);
+}

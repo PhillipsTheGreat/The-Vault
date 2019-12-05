@@ -13,13 +13,13 @@ import VinlandCover from "../../Images/VinlandCover.jpg";
 import CopCraftCover from "../../Images/CopCraftCover.jpg";
 import IronBloodedOrphansCover from "../../Images/IronBloodedOrphansCover.jpg";
 
-function HomePage() {
+export default function HomePage() {
   return (
     <div className="HomePageContainer">
       <div className="ShowCardContainer">
         <div className="ShowCard">
           <Link to="./series/Danmachi">
-            <img src={DanmachiCover} ALT="Danmachi" width="114" height="148" />
+            <img src={DanmachiCover} alt="Danmachi" width="114" height="148" />
             <div className="ShowTitle" >
               Danmachi
             </div>
@@ -27,7 +27,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/DemonSlayer">
-            <img src={DemonSlayerCover} ALT="DemonSlayer" width="114" height="148" />
+            <img src={DemonSlayerCover} alt="DemonSlayer" width="114" height="148" />
             <div className="ShowTitle" >
               DemonSlayer
           </div>
@@ -35,7 +35,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/DrStone">
-            <img src={DrStoneCover} ALT="Dr.Stone" width="114" height="148" />
+            <img src={DrStoneCover} alt="Dr.Stone" width="114" height="148" />
             <div className="ShowTitle" >
               Dr.Stone
           </div>
@@ -43,7 +43,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/GoldenWind">
-            <img src={GoldenWindCover} ALT="Golden Wind" width="114" height="148" />
+            <img src={GoldenWindCover} alt="Golden Wind" width="114" height="148" />
             <div className="ShowTitle" >
               GoldenWind
             </div>
@@ -51,7 +51,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/Haruhi">
-            <img src={HaruhiCover} ALT="Haruhi Sizumia" width="114" height="148" />
+            <img src={HaruhiCover} alt="Haruhi Sizumia" width="114" height="148" />
             <div className="ShowTitle" >
               Haruhi Sizumia
           </div>
@@ -59,7 +59,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/SacredBeasts">
-            <img src={SacredBeastsCover} ALT="To The Abondoned Sacred Beasts" width="114" height="148" />
+            <img src={SacredBeastsCover} alt="To The Abondoned Sacred Beasts" width="114" height="148" />
             <div className="ShowTitle" >
               To The Abondoned Sacred Beasts
           </div>
@@ -67,7 +67,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/VinlandSaga">
-            <img src={VinlandCover} ALT="Vinland Saga" width="114" height="148" />
+            <img src={VinlandCover} alt="Vinland Saga" width="114" height="148" />
             <div className="ShowTitle" >
               Vinland Saga
           </div>
@@ -75,7 +75,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/Arifureta">
-            <img src={ArifuretaCover} ALT="Arifureta" width="114" height="148" />
+            <img src={ArifuretaCover} alt="Arifureta" width="114" height="148" />
             <div className="ShowTitle" >
               Arifureta
           </div>
@@ -83,7 +83,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/IronBloodedOrphans">
-            <img src={IronBloodedOrphansCover} ALT="Iron Blooded Orphans" width="114" height="148" />
+            <img src={IronBloodedOrphansCover} alt="Iron Blooded Orphans" width="114" height="148" />
             <div className="ShowTitle" >
               Iron Blooded Orphans
           </div>
@@ -91,7 +91,7 @@ function HomePage() {
         </div>
         <div className="ShowCard">
           <Link to="./series/CopCraft">
-            <img src={CopCraftCover} ALT="CopCraft" width="114" height="148" />
+            <img src={CopCraftCover} alt="CopCraft" width="114" height="148" />
             <div className="ShowTitle" >
               CopCraft
           </div>
@@ -137,4 +137,3 @@ function HomePage() {
   );
 }
 
-export default HomePage;

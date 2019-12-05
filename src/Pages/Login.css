@@ -31,7 +31,7 @@
   background: #00A3FF;
   mix-blend-mode: normal;
   box-shadow: inset 0px 0px 6px #FFFFFF;
-  /* animation: myOrbit 10s linear infinite; */
+  /* animation: myOrbit 1ms linear infinite; */
 }
 
 .LoginButton:hover{
@@ -55,8 +55,8 @@
   box-shadow: inset 0px 0px 4px #FFFFFF; 
 }
 
-/* @keyframes myOrbit {
+@keyframes myOrbit {
 	from { 	transform: rotate(360deg) translateX(125px) rotate(90deg); }
   to   {  transform: rotate(0deg) translateX(125px) rotateZ(90deg); }
-} */
+}
 

@@ -37,7 +37,16 @@ const siteHeader = () => {
     )
 }
 
-function App() {
+// const customScrollbar = () => {
+//     return (
+//         <div className="ScrollContainer">
+//             <div className="ScrollBar"></div>
+//             <span className="Spacer"></span>
+//         </div>
+//     )
+// }
+
+export default function App() {
     return (
         <html lang="en">
             <title>
@@ -48,7 +57,9 @@ function App() {
                     <div className="App">
                         <Router>
                             <Route path="/home" render={() => siteHeader()} />
+                            {/* <Route path="/home" render={() => customScrollbar()} /> */}
                             <Route path="/series" render={() => siteHeader()} />
+                            {/* <Route path="/series" render={() => customScrollbar()} /> */}
                             <Route path="/login" render={() => loginHeader()} />
                             <Route exact path="/" render={() => loginHeader()} />
                             <div className="PageContentContainer">
@@ -64,13 +75,6 @@ function App() {
         </html>
     );
 }
-
-
-
-
-
-
-export default App;
 
 
 
